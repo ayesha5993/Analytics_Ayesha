@@ -1,5 +1,4 @@
 #Title: Data Structures in R
-
 #vectors----
 cv = c('a','b','c','d','e')
 nv = c(2,3,4,5,6)
@@ -110,3 +109,12 @@ install.packages('dplyr')
 library(dplyr)
 df %>% count()
 count(df)
+library(wordcloud2)
+df1=data.frame(word=c('mdi','iim','imt','fms'),freq=c(20,23,15,30))
+df1
+wordcloud2(df1)
+head(demoFreq)
+wordcloud2(demoFreq,size=2,color="random-light",backgroundColor = "grey")
+names(demoFreq)
+wordcloud2(demoFreq,size=2,minRotation = -pi/2,maxRotation = -pi/6,rotateRatio = 1)
+df1=fix(df1)
