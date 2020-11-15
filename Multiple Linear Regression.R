@@ -105,3 +105,4 @@ head(women)
 nrow(women)
 library(dplyr)
 women %>% sample_frac(.7) -> train1
+
